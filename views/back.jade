@@ -1,0 +1,12 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title= title
+  body
+    p. First name:
+      input(data-bind="value: firstName")
+    p. First name capitalized:
+      strong(data-bind="text: firstNameCaps")
+
+    script(data-main="javascripts/main", src="javascripts/lib/require/require.js")
